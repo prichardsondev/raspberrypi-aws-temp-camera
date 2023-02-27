@@ -1,4 +1,6 @@
 
+//upload file to S3
+
 require('dotenv').config();
 let AWS = require('../credentials');
 const fs = require('fs/promises');

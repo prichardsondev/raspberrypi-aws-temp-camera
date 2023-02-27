@@ -23,13 +23,13 @@ const service = {
 
             const config = {
                 output, // output file path
-                timeout: 2000, // timeout before taking the picture
+                timeout: 500, // timeout before taking the picture
                 width: 640, // image width
                 height: 480, // image height
                 nopreview: true,
             };
 
-            let pic = await libcamera.still(config);
+            await libcamera.still(config);
 
             return {
                 output: config.output,

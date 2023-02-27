@@ -13,7 +13,7 @@
   |      +       | 5V       |
   |     out      | GPIO 4   |
 
-  pi camera module
+  PI camera module
   ```
   ## AWS Services
   ```
@@ -23,13 +23,14 @@
 
   S3 Bucket
 
-  note you can use mine bucket and table name already in .env file
+  note you can use my bucket and table name already in .env file
   ```
   ## Basic Application Path
   ```
-  app.js -> api/ router.js-> controller.js <-> service.js
-                                  | 
-                              /db/controllers ... <-> /services ...
+  app.js -> api/ router.js <-> controller.js <-> service.js
+                                   || 
+                                   \/
+                              /db /controllers(models)  <-> /services ...
   ```
 
 ## Endpoints
@@ -60,6 +61,9 @@
     "output": "/home/pi/server/public/images/1646572466933.jpg",
     "timestamp": 1677439673512,
     "machineID": "02",
+    "Location":	"https://prichardson-pi-training.s3.amazonaws.com/prichardson/1677490263238.jpg",
+    "key":	"prichardson/1677490263238.jpg",
+    "Bucket":	"prichardson-pi-training"
   }
   ```
 

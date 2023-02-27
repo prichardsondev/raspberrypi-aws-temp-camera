@@ -1,3 +1,4 @@
+//write to dynamobd
 
 var AWS = require('../credentials');
 require('dotenv').config();
