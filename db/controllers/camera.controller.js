@@ -11,7 +11,7 @@ const cameraController = {
                 client: process.env.CLIENT,
                 machineid: process.env.MACHINE_ID,
                 address: s3data.Location,
-                timestamp: Date.now()
+                timestamp: new Date().toISOString()
             });
 
             await putDynamo(camera);

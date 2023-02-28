@@ -11,7 +11,7 @@ const tempController = {
                 client: process.env.CLIENT,
                 machineid: process.env.MACHINE_ID,
                 celsius: data.temp,
-                timestamp: Date.now()
+                timestamp: new Date().toISOString()
             });
             putDynamo(temp);
         } catch (err) {

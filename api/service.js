@@ -11,14 +11,14 @@ const service = {
 
         return {
             temp: res.temperature.toFixed(2),
-            timestamp: Date.now(),
+            timestamp: new Date().toISOString(),
             machineID: process.env.MACHINE_ID
         };
     },
     getImage: async () => {
 
         try {
-            const timestamp = Date.now();
+            const timestamp = new Date().toISOString();
             let output = `${__dirname}/public/images/${timestamp}.jpg`;
 
             const config = {

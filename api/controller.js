@@ -12,7 +12,7 @@ const controller = {
     const data = {
       uptime: process.uptime(),
       message: 'Ok',
-      timestamp: Date.now()
+      timestamp: new Date().toISOString()
     }
     res.status(200).send(data);
   },
